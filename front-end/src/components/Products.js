@@ -1,9 +1,10 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
+import Rating from './Rating'
 
 const Products = ({ product }) => {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card className='my-3 p-3 rounded'>
       <a style={{ textDecoration: 'none' }} href={`/products/${product._id}`}>
         <Card.Img variant='top' src={product.image} />
         <Card.Body>
@@ -11,11 +12,11 @@ const Products = ({ product }) => {
             <strong>{product.name}</strong>
           </Card.Title>
           <Card.Text as='div'>
-            <div className='my-3'>
-              {product.rating} from {product.numReviews} reviews
-            </div>
+            <Rating
+              value={product.rating}
+              text={`${product.numReviews} reviews`}
+            />
           </Card.Text>
-          <Card.Text as='div'>{product.description}</Card.Text>
           <Card.Text as='h3'>${product.price}</Card.Text>
           <Button variant='primary'>Go somewhere</Button>
         </Card.Body>
