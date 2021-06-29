@@ -1,11 +1,12 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
 import Rating from './Rating'
+import { Link } from 'react-router-dom'
 
 const Products = ({ product }) => {
   return (
     <Card className='my-3 p-3 rounded'>
-      <a style={{ textDecoration: 'none' }} href={`/products/${product._id}`}>
+      <Link style={{ textDecoration: 'none' }} to={`/products/${product._id}`}>
         <Card.Img variant='top' src={product.image} />
         <Card.Body>
           <Card.Title as='h3'>
@@ -18,9 +19,8 @@ const Products = ({ product }) => {
             />
           </Card.Text>
           <Card.Text as='h3'>${product.price}</Card.Text>
-          <Button variant='primary'>Go somewhere</Button>
         </Card.Body>
-      </a>
+      </Link>
     </Card>
   )
 }
