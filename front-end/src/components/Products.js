@@ -6,21 +6,26 @@ import { Link } from 'react-router-dom'
 const Products = ({ product }) => {
   return (
     <Card className='my-3 p-3 rounded'>
-      <Link style={{ textDecoration: 'none' }} to={`/products/${product._id}`}>
-        <Card.Img variant='top' src={product.image} />
-        <Card.Body>
+      
+      <Link to={`/product/${product._id}`}>
+        <Card.Img src={product.image} variant='top' />
+      </Link>
+
+      <Card.Body>
+        <Link style={{textDecoration:'none'}} to={`/product/${product._id}`}>
           <Card.Title as='h3'>
             <strong>{product.name}</strong>
           </Card.Title>
-          <Card.Text as='div'>
-            <Rating
-              value={product.rating}
-              text={`${product.numReviews} reviews`}
-            />
-          </Card.Text>
-          <Card.Text as='h3'>${product.price}</Card.Text>
-        </Card.Body>
-      </Link>
+        </Link>
+
+        <Card.Text as='div'>
+          <Rating
+            value={product.rating}
+            text={`${product.numReviews} reviews`}
+          />
+        </Card.Text>
+        <Card.Text as='h3'>${product.price}</Card.Text>
+      </Card.Body>
     </Card>
   )
 }

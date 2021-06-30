@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import Homescreen from './screen/Homescreen'
-import Productscreen from './screen/Productscreen'
+import HomeScreen from './screen/HomeScreen'
+import ProductScreen from './screen/ProductScreen'
 
 const App = () => {
   return (
@@ -12,13 +12,8 @@ const App = () => {
       <Header></Header>
       <main className='py-3'>
         <Container>
-          <Route exact path='/'>
-            <Homescreen />
-          </Route>
-
-          <Route path='/products/:id'>
-            <Productscreen />
-          </Route>
+          <Route path='/' component={HomeScreen} exact />
+          <Route path='/product/:id' component={ProductScreen} />
         </Container>
       </main>
       <Footer></Footer>
