@@ -155,7 +155,7 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '12',
+    _id: '13',
     name: 'Golden Simple Necklace',
     image: '/images/necklace7.jpg',
     description:
