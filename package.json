@@ -1,0 +1,14 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "MERN shopping site",
+  "main": "server.js",
+  "scripts": {
+    "start": "node back-end/server"
+  },
+  "author": "Jihan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

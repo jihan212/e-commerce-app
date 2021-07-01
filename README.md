@@ -7,5 +7,5 @@
 * Express.js
 * MongoDB
 * React-bootstrap
-
+* Mongoose
 
