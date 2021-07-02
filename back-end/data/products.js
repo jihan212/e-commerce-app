@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Pearl Earring ',
     image: '/images/earring1.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'Pearl-Gold Earring',
     image: '/images/earring2.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Pearl Necklace',
     image: '/images/necklace1.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'Butterfly Necklace',
     image: '/images/necklace2.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Gold Flower with Pearl Earring',
     image: '/images/earring3.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'Slowflakes Earring',
     image: '/images/earring4.jpg',
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '7',
     name: 'White Gold Flower Necklace',
     image: '/images/necklace3.jpg',
     description:
@@ -91,7 +84,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '8',
     name: 'Gold Flower Necklace',
     image: '/images/necklace4.jpg',
     description:
@@ -104,7 +96,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '9',
     name: 'Golden Green Earring',
     image: '/images/earring5.jpg',
     description:
@@ -117,7 +108,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '10',
     name: 'Golden Pearl Earring',
     image: '/images/earring6.jpg',
     description:
@@ -130,7 +120,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '11',
     name: 'Golden Rose Necklace',
     image: '/images/necklace5.jpg',
     description:
@@ -143,7 +132,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '12',
     name: 'Golden Star Necklace',
     image: '/images/necklace6.jpg',
     description:
@@ -156,7 +144,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '13',
     name: 'Golden Simple Necklace',
     image: '/images/necklace7.jpg',
     description:
