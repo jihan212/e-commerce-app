@@ -26,8 +26,11 @@ const OrderScreen = ({ match }) => {
   }
 
   useEffect(() => {
-    dispatch(getOrderDetails(orderId))
-  }, [])
+    if (!order || order._id !== orderId) {
+      dispatch(getOrderDetails(orderId))
+    }
+    // eslint-disable-next-line
+  }, [order, orderId])
 
   return loading ? (
     <Loader />
@@ -155,7 +158,7 @@ const OrderScreen = ({ match }) => {
                 //   type='button'
                 //   className='btn-block'
                 //   disabled={order.orderItems === 0}
-                //   onClick={placeOrderHandler}
+                //   onClick={}
                 >
                   PayPal
                 </Button>
